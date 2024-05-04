@@ -1,0 +1,259 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+body {
+  background-color: #000000;
+  color: white;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.heading-primary {
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  justify-content: space-between;
+  border-bottom: 2px solid #2c2e39;
+}
+.nav-title {
+  font-size: 3.2rem;
+  margin: 0;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  align-self: center;
+  margin-bottom: 0;
+}
+.nav-item {
+  justify-self: center;
+}
+.nav-list .nav-item {
+  display: inline-block;
+  padding: 2rem 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-list .nav-item:hover {
+  background-color: white;
+}
+.nav-list .nav-item:hover a {
+  color: #000000;
+}
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+.login {
+  padding: 0.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  border-radius: 17px;
+  border: solid 1px #fff;
+}
+.login:hover {
+  color: #fff;
+}
+.section-sign {
+  height: calc(100vh - 8rem);
+}
+
+.decour {
+  width: 70%;
+  height: 65%;
+  background-color: #d9d9d9;
+  justify-self: start;
+  align-self: center;
+  color: #d9d9d9;
+  border-radius: 25px;
+}
+.flex-switch {
+  display: flex;
+  flex-direction: column;
+}
+.sign-ptn,
+.sign-ptn {
+  display: inline-block;
+  width: 80%;
+  padding: 1.2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #d9d9d9;
+  color: #1e8efa;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.4s;
+  border: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.sign-ptn:hover,
+.sign-ptn:active {
+  color: #d9d9d9;
+  background-color: #1e8efa;
+}
+.sign-list {
+  justify-self: center;
+  align-self: center;
+  list-style: NONE;
+}
+.sign-item {
+  margin-bottom: 1.2rem;
+}
+.form-label {
+  font-size: 1.3rem;
+}
+.flex-ops {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.email {
+  color: #fff;
+
+  width: 80%;
+  padding: 1.4rem;
+  border-radius: 18px;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: #333645;
+}
+.pass {
+  color: #fff;
+  width: 80%;
+  padding: 1.4rem;
+  border-radius: 18px;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: #333645;
+}
+.item-text {
+  color: #c0c0c0;
+  font-size: 1.2rem;
+}
+.sign-link {
+  text-decoration: none;
+}
+.forget-switch {
+  /* margin-left:20rem;
+   justify-self: end; */
+}
+.create-space {
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+.flex {
+  display: flex;
+  justify-content: start;
+}
+
+@media screen and (max-width: 1350px) {
+  .hero-container-img {
+    overflow: hidden;
+  }
+  :root {
+    font-size: 9px;
+  }
+  .hero-container-img {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  :root {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 720px) {
+  :root {
+    font-size: 7px;
+    .heading-primary {
+      font-size: 4rem;
+    }
+    .decour {
+      display: none;
+    }
+    .grid {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+    }
+    .sign-list {
+      max-width: 60rem;
+      /* display: flex; */
+      /* flex-direction: column;
+    justify-content: center; */
+      margin: 0 auto;
+    }
+    .sign-ptn,
+    .sign-ptn {
+      display: inline-block;
+      width: 65%;
+    }
+    .email {
+      width: 65%;
+    }
+    .pass {
+      width: 65%;
+    }
+    .up-space {
+      margin-top: 20rem;
+    }
+    .heading-primary {
+      font-size: 3.2rem;
+    }
+    .forget-switch {
+      margin: 0.5rem 0 1rem 0;
+    }
+  }
+  .nav-list {
+    display: flex;
+    align-items: start;
+    list-style: none;
+    margin-bottom: 0;
+  }
+}
+
+/*
+  @media screen and (max-width: 870px) {
+    .hero-container-text {
+      flex-basis: 100%;
+    }
+    .hero-container-img {
+      flex-basis: 0%;
+    }
+  }
+  @media screen and (max-width: 402px) {
+    :root {
+      font-size: 6.5px;
+    }
+  } */

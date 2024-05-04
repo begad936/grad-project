@@ -1,0 +1,165 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: white;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+*:focus {
+  outline: none;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  justify-content: space-between;
+  border-bottom: 2px solid #2c2e39;
+}
+.nav-title {
+  font-size: 3.2rem;
+  margin: 0;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  align-self: center;
+  margin-bottom: 0;
+}
+.nav-list .nav-item {
+  display: inline-block;
+  padding: 2rem 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-list .nav-item:hover {
+  background-color: white;
+}
+.nav-list .nav-item:hover a {
+  color: #000000;
+}
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+.login-btn {
+  background-color: transparent;
+  border: 1px solid #2c2e39;
+  border-radius: 3rem;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.login-img {
+  width: 30px;
+  border-radius: 50%;
+}
+.login-name {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.login-icon {
+  color: white;
+  margin-left: 5px;
+}
+.dropdown-menu {
+  background: #000000;
+}
+.dropdown-item {
+  color: white;
+  font-size: 1.5rem;
+}
+.section-hero {
+  height: calc(100vh - 8.5rem);
+  display: flex;
+  justify-content: space-between;
+}
+.hero-container-text {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 1.5rem;
+  padding-left: 5rem;
+}
+.hero-title {
+  font-size: 6rem;
+}
+.hero-description {
+  font-size: 1.6rem;
+  color: #78828a;
+  line-height: 205x;
+}
+.hero-btn {
+  width: fit-content;
+  padding: 1rem 2rem;
+
+  font-size: 1.5rem;
+  background-color: #0094ff;
+  color: white;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.hero-btn:hover {
+  background-color: #009fff;
+}
+.hero-container-img {
+  position: relative;
+  height: 100%;
+  flex-basis: 50%;
+  background-color: #0094ff;
+}
+.hero-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 85rem;
+}
+@media screen and (max-width: 1350px) {
+  .hero-container-img {
+    overflow: hidden;
+  }
+  :root {
+    font-size: 9px;
+  }
+  .hero-container-img {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  :root {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 960px) {
+  :root {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .hero-container-text {
+    flex-basis: 100%;
+  }
+  .hero-container-img {
+    flex-basis: 0%;
+  }
+}
+@media screen and (max-width: 402px) {
+  :root {
+    font-size: 6.5px;
+  }
+}

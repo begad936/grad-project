@@ -1,0 +1,118 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+body {
+  background-color: #000000;
+  color: white;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.nav-title {
+  font-size: 3.2rem;
+  margin: 0;
+  padding: 1.8rem 0 1.8rem 0;
+  text-align: center;
+  transform: translate(0, 135%);
+}
+
+.pass {
+  width: 25rem;
+  padding: 1rem;
+  /* border-radius: 18px; */
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: #333645;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 7px;
+}
+.form-label {
+  font-size: 1.3rem;
+  align-self: self-start;
+  /* margin-right: 1rem; */
+  padding: 0.5rem 0;
+  color: #aaaaaa;
+}
+.reset-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 8rem);
+  flex-direction: column;
+  gap: 0rem;
+}
+.reset-text {
+  align-self: center;
+  /* border-bottom: 1px solid #545454 ; */
+  padding: 1.8rem 1rem;
+}
+.reset-box {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem;
+  border: 1px solid #545454;
+  border-radius: 9px;
+  /* padding: 6rem; */
+  list-style: none;
+  align-items: center;
+}
+
+.flex-old {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #545454;
+  padding: 0 5rem;
+  padding-bottom: 5rem;
+}
+@media screen and (max-width: 622px) {
+  .hero-container-img {
+    overflow: hidden;
+  }
+  :root {
+    font-size: 8px;
+  }
+  .hero-container-img {
+    overflow: hidden;
+  }
+}
+.pass-icon {
+  width: 12px;
+  transform: translate(23rem, -210%);
+}
+
+.sign-ptn,
+.sign-ptn {
+  display: inline-block;
+  width: 100%;
+  padding: 1.2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: #0084ff;
+  color: #d9d9d9;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.4s;
+  border: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.sign-ptn:hover,
+.sign-ptn:active {
+  /* color: #d9d9d9; */
+  background-color: #004688;
+  /* color: #0153a0; */
+}

@@ -1,0 +1,96 @@
+:root {
+    font-size: 10px;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  *:focus {
+    outline: none;
+  }
+  body {
+    background-color: #000000;
+    color: white;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .head-box{
+    text-align: center;
+    transform:translate(0,140%) ;
+  }
+.heading-primary{
+    font-size: 2.2rem;
+    /* line-height: 1.05; */
+    margin-bottom: 2rem;
+  }
+.head-sec{
+font-size: 2.6rem;
+font-weight: 50;
+}
+
+  .service-section{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+height: 100vh
+  }
+ 
+.service-box{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 20rem;
+background-color: #fff;
+border-radius: 20px;
+align-items: center;
+gap: 1rem;
+padding: 3rem;
+transform: translate(0,-50%);
+}
+.move-down{
+    transform: translate(0,-30%);
+  }
+.service-circ{
+    width: 3rem;
+    height: 3rem;
+    background-color: #0094FF;
+    border-radius: 100%;
+    /* align-self: center; */
+
+}
+.heading-secondary{
+color: #373434;
+/* padding: 0 rem; */
+font-size: 1.5rem;
+}
+.service-text{
+    /* padding: 0 2rem; */
+    color: #737373;
+    align-self: center;
+
+}
+@media screen and (max-width: 874px) {
+    :root {
+      font-size: 7px;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .service-section{
+        flex-direction: column;
+        gap:2rem ;
+    }
+    .head-box{
+        text-align: center;
+        transform:translate(0,-50) ;
+      }
+      .service-box{
+        transform: translate(0,0);
+        }
+        .move-down{
+            transform: translate(0,0);
+          }
+  }
